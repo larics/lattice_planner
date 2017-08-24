@@ -1,0 +1,21 @@
+<launch>
+
+  <!-- Launch the map server -->
+  <node pkg="map_server" type="map_server" name="map_server"
+        args="$(find lattice_planner)/maps/empty.yaml"/>
+
+  <!-- Launch the dummy robot -->
+  <node pkg="lattice_planner" type="dummy_robot.py" name="dummy"/>
+  
+  <!-- Launch the planner -->
+  <node pkg="lattice_planner" type="pathPlanner" name="planner"
+        args="$(find lattice_planner)/params/params_p3dx.mat">
+    <param name="map_frame_id" value="map"/>
+    <param name="robot_frame_id" value="dummy"/>
+  </node>
+  
+  <!-- Launch rviz -->
+  <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find lattice_planner)/rviz/test.rviz"/>
+    
+</launch>
