@@ -4,7 +4,7 @@ ROS implementation of a global 2D path planner based on state lattices.
 
 # Dependencies #
 
-The package depends on [agv_control_msgs](https://bitbucket.org/larics/agv_control_msgs). Download agv_control_msgs into the same catkin workspace before building this package. 
+The package depends on [agv_control_msgs](https://github.com/larics/agv_control_msgs). Download agv_control_msgs into the same catkin workspace before building this package. 
 
 ## The pathPlanner node ##
 
