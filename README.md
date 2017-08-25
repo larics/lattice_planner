@@ -2,9 +2,14 @@
 
 ROS implementation of a global 2D path planner based on state lattices.
 
-# Dependencies #
+## Dependencies ##
 
-The package depends on [agv_control_msgs](https://github.com/larics/agv_control_msgs). Download agv_control_msgs into the same catkin workspace before building this package. 
+The package requires the [matio library](https://sourceforge.net/projects/matio/) for loading lattice parameters from `.mat` files:
+```
+sudo apt install libmatio-dev
+```
+
+Furthremore, it depends on [agv_control_msgs](https://github.com/larics/agv_control_msgs). Download agv_control_msgs into the same catkin workspace before building this package. 
 
 ## The pathPlanner node ##
 
