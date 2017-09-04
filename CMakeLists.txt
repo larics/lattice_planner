@@ -43,6 +43,8 @@ add_executable(pathPlanner src/pathPlanner.cpp src/graphSearch.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(pathPlanner ${catkin_LIBRARIES} ${MATIO_LIBRARIES} ${HDF5_LIBRARIES})
 
+add_dependencies(pathPlanner agv_control_msgs_generate_messages_cpp)
+
 
 
 #############
