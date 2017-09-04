@@ -23,8 +23,6 @@ Published topics: /plan (the path planned by the robot)
 
 ## Testing ##
 
-Before using the node, it is necessary to download the lattice parameter files by running the `download_params.sh` script from the `params` folder.
-
 To test the node use the provided `test.launch` file. You can set the pose of a dummy robot in RViz with the `2D Pose Estimate` tool and you can provide navigation goals with the `2D Nav Goal` tool. Before setting the first planning goal, make sure to set a pose estimate outside of the map edges, otherwise planning will fail (map edges are treated as obstacles by the planner). For distances greater than 10 meters, the planning can take quite a long time.
 
 ## Citing ##
