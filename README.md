@@ -11,11 +11,6 @@ The [matio library](https://sourceforge.net/projects/matio/) is required for loa
 sudo apt install libmatio-dev
 ```
 
-The [ackermann_msgs ROS package](http://wiki.ros.org/ackermann_msgs) is required for publishing Ackermann steering commands. It can be installed from the official ROS repository:
-```
-sudo apt install ros-kinetic-ackermann-msgs
-```
-
 Furthremore, the package depends on [agv_control_msgs](https://github.com/larics/agv_control_msgs). Download agv_control_msgs into the same catkin workspace before building this package. 
 
 ## The pathPlanner node ##
