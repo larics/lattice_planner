@@ -6,7 +6,7 @@ ROS implementation of a global 2D path planner based on state lattices.
 
 The package has been developed and tested against the ROS Kinetic distro.
 
-The [matio library](https://sourceforge.net/projects/matio/) is required for loading lattice parameters from `.mat` files:
+The [matio library](https://sourceforge.net/projects/matio/) is required for loading lattice parameters from `.mat` files. Until [this PR](https://github.com/ros/rosdistro/pull/19388) is merged, it must be installed manually:
 ```
 sudo apt install libmatio-dev
 ```
